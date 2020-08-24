@@ -9,34 +9,63 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var gameState: GameState = .start
+    
+    @State var computerSign: Sign?
+    @State var playerSign: Sign?
+    
     var body: some View {
-        VStack(spacing: 50.0) {
-            Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
-                .font(.system(size: 70.0))
+        ZStack {
+            backgroundColors[gameState]
+                .edgesIgnoringSafeArea(.all)
             
-            Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
-                .font(.title)
-            
-            HStack {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    Text(Sign.rock.emoji)
-                        .font(.system(size: 70.0))
-                }
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    Text(Sign.paper.emoji)
-                        .font(.system(size: 70.0))
-                }
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    Text(Sign.scissors.emoji)
-                        .font(.system(size: 70.0))
-                }
-            }
-            
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Play Again")
+            VStack(spacing: 50.0) {
+                Text(computerSign?.emoji ?? "🤖")
+                    .font(.system(size: 70.0))
+                
+                Text(gameState.status)
                     .font(.title)
+                
+                HStack {
+                    Button(action: { self.play(playerSign: .rock) }) {
+                        Text(Sign.rock.emoji)
+                            .font(.system(size: 70.0))
+                    }
+                    .opacity(playerSign == .rock || playerSign == nil ? 1 : 0)
+                    
+                    Button(action: { self.play(playerSign: .paper) }) {
+                        Text(Sign.paper.emoji)
+                            .font(.system(size: 70.0))
+                    }
+                    .opacity(playerSign == .paper || playerSign == nil ? 1 : 0)
+                    
+                    Button(action: { self.play(playerSign: .scissors) }) {
+                        Text(Sign.scissors.emoji)
+                            .font(.system(size: 70.0))
+                    }
+                    .opacity(playerSign == .scissors || playerSign == nil ? 1 : 0)
+                }
+                
+                Button(action: playAgain) {
+                    Text("Play Again")
+                        .font(.title)
+                }
+                .opacity(gameState == .start ? 0 : 1)
             }
         }
+    }
+    
+    func play(playerSign: Sign) {
+        self.playerSign = playerSign
+        computerSign = randomSign()
+        gameState = playerSign.gameState(against: computerSign!)
+    }
+    
+    func playAgain() {
+        playerSign = nil
+        computerSign = nil
+        gameState = .start
     }
 }
 
