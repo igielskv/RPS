@@ -13,6 +13,8 @@
 		9FC421E324F2EA26006AF0B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC421E224F2EA26006AF0B9 /* Assets.xcassets */; };
 		9FC421E624F2EA26006AF0B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC421E524F2EA26006AF0B9 /* Preview Assets.xcassets */; };
 		9FC421E924F2EA26006AF0B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC421E724F2EA26006AF0B9 /* LaunchScreen.storyboard */; };
+		9FC421F124F2EAD7006AF0B9 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC421F024F2EAD7006AF0B9 /* Sign.swift */; };
+		9FC421F324F2F095006AF0B9 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC421F224F2F095006AF0B9 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9FC421E524F2EA26006AF0B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FC421E824F2EA26006AF0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FC421EA24F2EA26006AF0B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC421F024F2EAD7006AF0B9 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		9FC421F224F2F095006AF0B9 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				9FC421DC24F2EA25006AF0B9 /* AppDelegate.swift */,
 				9FC421DE24F2EA25006AF0B9 /* SceneDelegate.swift */,
 				9FC421E024F2EA25006AF0B9 /* ContentView.swift */,
+				9FC421F024F2EAD7006AF0B9 /* Sign.swift */,
+				9FC421F224F2F095006AF0B9 /* GameState.swift */,
 				9FC421E224F2EA26006AF0B9 /* Assets.xcassets */,
 				9FC421E724F2EA26006AF0B9 /* LaunchScreen.storyboard */,
 				9FC421EA24F2EA26006AF0B9 /* Info.plist */,
@@ -148,6 +154,8 @@
 			files = (
 				9FC421DD24F2EA25006AF0B9 /* AppDelegate.swift in Sources */,
 				9FC421DF24F2EA25006AF0B9 /* SceneDelegate.swift in Sources */,
+				9FC421F324F2F095006AF0B9 /* GameState.swift in Sources */,
+				9FC421F124F2EAD7006AF0B9 /* Sign.swift in Sources */,
 				9FC421E124F2EA25006AF0B9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
