@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F5BCD2D24F4482200E722EC /* backgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BCD2C24F4482200E722EC /* backgroundColors.swift */; };
 		9FC421DD24F2EA25006AF0B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC421DC24F2EA25006AF0B9 /* AppDelegate.swift */; };
 		9FC421DF24F2EA25006AF0B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC421DE24F2EA25006AF0B9 /* SceneDelegate.swift */; };
 		9FC421E124F2EA25006AF0B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC421E024F2EA25006AF0B9 /* ContentView.swift */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F5BCD2C24F4482200E722EC /* backgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundColors.swift; sourceTree = "<group>"; };
 		9FC421D924F2EA25006AF0B9 /* RPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC421DC24F2EA25006AF0B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC421DE24F2EA25006AF0B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 				9FC421E024F2EA25006AF0B9 /* ContentView.swift */,
 				9FC421F024F2EAD7006AF0B9 /* Sign.swift */,
 				9FC421F224F2F095006AF0B9 /* GameState.swift */,
-				9F5BCD2C24F4482200E722EC /* backgroundColors.swift */,
 				9FC421E224F2EA26006AF0B9 /* Assets.xcassets */,
 				9FC421E724F2EA26006AF0B9 /* LaunchScreen.storyboard */,
 				9FC421EA24F2EA26006AF0B9 /* Info.plist */,
@@ -158,7 +155,6 @@
 				9FC421DD24F2EA25006AF0B9 /* AppDelegate.swift in Sources */,
 				9FC421DF24F2EA25006AF0B9 /* SceneDelegate.swift in Sources */,
 				9FC421F324F2F095006AF0B9 /* GameState.swift in Sources */,
-				9F5BCD2D24F4482200E722EC /* backgroundColors.swift in Sources */,
 				9FC421F124F2EAD7006AF0B9 /* Sign.swift in Sources */,
 				9FC421E124F2EA25006AF0B9 /* ContentView.swift in Sources */,
 			);
